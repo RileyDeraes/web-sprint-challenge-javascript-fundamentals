@@ -26,14 +26,30 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    -.forEach executes a function/task once for each item in an array. It mutates the original array.
+    -.map makes a new array, with the results of a function/task in the original array. It does not mutate the original array.
 
 2. Explain the difference between a callback and a higher order function.
+    -A higher-order function takes a function as an argument.
+    -A callback function is given to another another function. Usually a callback function is used in a higher-order function.
 
 3. What is closure?
+    -A closure is created when a function references outside of the function's scope. (In the "lexical environment").
 
 4. Describe the four rules of the 'this' keyword.
+  1. Implicit Binding: This only applies to objects with methods. When it is invoked, it will look to the left of the dot. That's what "This" refers to.
+
+  2. Explicit Binding:
+      - Call will immediately invoke the function and pass arguments one by one.
+      - Apply will also immediately invoke the function, but will pass arguments as an array.
+      - Bind will not immediately invoke the function, instead it returns a new function that can be invoked later. We also pass the arguments one by one.
+
+  3. New Binding: When using the "new" keyword, constructs a new object and "this" points to that specific object. When it is invoked, "this" will point to the new object that was created.
+
+  4. Window Binding: The value of "This" will be the console object. (This should never be used.)
 
 5. Why do we need super() in an extended class?
+    -Because it lets us inherit parent attributes.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -41,12 +57,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -84,8 +100,8 @@ There are a few stretch problems found throughout the files, don't work on them 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request
 
 
